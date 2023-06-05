@@ -52,8 +52,8 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Simple Table]**
-
+- **[Simple Animals Table]**
+- **[Filtering animals with age& neutered name etc]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -104,9 +104,6 @@ insert files...
 - Twitter: [@Abbas_sDev](https://twitter.com/Abbas_sDev)
 - LinkedIn: [Abbas-Sarwar](https://www.linkedin.com/in/abbas-sarwar-4a0b16257/)
 
-👤 **Author2**
-- GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
-- LinkedIn: [zunairkhan811](https://www.linkedin.com/in/zunairkhan811/)
 
 ####Documentation 
 - [Video]: [Link](https://drive.google.com/file/d/11_12tOF8K6XA1ZLIavmJ3ApxGrO5AxlF/view)
