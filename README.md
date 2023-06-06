@@ -54,6 +54,9 @@
 
 - **[Simple Animals Table]**
 - **[Filtering animals with age& neutered name etc]**
+- **[ AGGREGATE ]**
+- **[UPDATING & REMOVING]**
+- **[COMMIT & ROLLBACK]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
