@@ -11,7 +11,9 @@ begin
 
 UPDATE animals
 SET species = 'unspecified'
+SELECT species from animals;
 ROLLBACK
+SELECT species from animals;
 
 begin
 
@@ -22,6 +24,8 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species is null;
+
+SELECT * from animals
 
 commit
 
