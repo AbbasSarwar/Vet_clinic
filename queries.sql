@@ -65,7 +65,12 @@ WHERE escape_attempts = 0;
 
 SELECT AVG(weight_kg) from animals
 
+//max escape
 SELECT MAX(escape_attempts) from animals
+GROUP BY neutered;
+
+//max escape by average
+SELECT neutered, AVG(escape_attempts) FROM animals
 GROUP BY neutered;
 
 SELECT 
@@ -74,6 +79,7 @@ MAX(weight_kg)
 FROM animals
 GROUP BY species;
 
+max escape //by year
 
 SELECT species, AVG(escape_attempts) from animals
 WHERE date_of_birth > '1990-01-01' AND date_of_birth < '2000-12-31'
