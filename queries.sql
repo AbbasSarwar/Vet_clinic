@@ -7,6 +7,11 @@ SELECT * from animals WHERE neutered = '1';
 SELECT * from animals WHERE name != 'Gabumon';
 SELECT * from animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
+begin
+
+UPDATE animals
+SET species = 'unspecified'
+ROLLBACK
 
 begin
 
@@ -20,12 +25,18 @@ WHERE species is null;
 
 commit
 
+SELECT * from animals
 
 begin
 
 DELETE from animals;
 
+select * from animals
+
 ROLLBACK
+
+select from animals
+
 
 
 begin
@@ -54,7 +65,7 @@ WHERE escape_attempts = 0;
 
 SELECT AVG(weight_kg) from animals
 
-SELECT MAX(name) from animals
+SELECT MAX(escape_attempts) from animals
 GROUP BY neutered;
 
 SELECT 
