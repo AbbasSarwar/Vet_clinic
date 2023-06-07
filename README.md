@@ -57,6 +57,10 @@
 - **[ AGGREGATE ]**
 - **[UPDATING & REMOVING]**
 - **[COMMIT & ROLLBACK]**
+- **[Created owner's table]**
+- **Created species table]**
+- **Modified animals table ID]**
+- **[Queries & join]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
