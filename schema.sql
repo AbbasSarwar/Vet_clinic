@@ -1,5 +1,5 @@
 CREATE TABLE animals(
-id int PRIMARY KEY NOT NULL,
+id SERIAL PRIMARY KEY NOT NULL,
 name varchar(40) NOT NULL,
 date_of_birth date NOT NULL,
 escape_attempts int NOT NULL,
@@ -38,6 +38,7 @@ DROP COLUMN species
 
 ALTER TABLE animals
 ADD COLUMN species_id int
+
 ALTER TABLE animals
 ADD CONSTRAINT fk_species  
 FOREIGN KEY(species_id) 
@@ -53,3 +54,40 @@ ADD CONSTRAINT fk_owners
 FOREIGN KEY (owner_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
+
+
+
+//
+CREATE TABLE vets 
+(
+    id SERIAL PRIMARY KEY,
+    name varchar(50),
+     age int, 
+     date_of_graduation date
+)
+
+CREATE TABLE specializations (
+   vet_id int,
+	species_id int,
+	CONSTRAINT fk_vets
+	FOREIGN KEY (vet_id)
+	REFERENCES vets(id),
+	CONSTRAINT fk_species
+	FOREIGN KEY(species_id)
+	REFERENCES species(id),
+	PRIMARY KEY (vet_id, species_id)
+)
+
+
+CREATE TABLE visits(
+vet_id int,
+animal_id int,
+date_of_visit date,
+CONSTRAINT fk_vet
+FOREIGN KEY (vet_id) 
+REFERENCES vets(id),
+CONSTRAINT fk_animal
+FOREIGN KEY (animal_id)
+REFERENCES animals(id),
+PRIMARY KEY (vet_id, animal_id, date_of_visit)
+)
