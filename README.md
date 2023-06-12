@@ -111,9 +111,11 @@ insert files...
 - Twitter: [@Abbas_sDev](https://twitter.com/Abbas_sDev)
 - LinkedIn: [Abbas-Sarwar](https://www.linkedin.com/in/abbas-sarwar-4a0b16257/)
 
+👤 **Author2**
 
-####Documentation 
-- [Video]: [Link](https://drive.google.com/file/d/11_12tOF8K6XA1ZLIavmJ3ApxGrO5AxlF/view)
+- GitHub: [@Seyi Oyemade](https://github.com/seyioyemade)
+- LinkedIn: [Seyi Oyemade](https://www.linkedin.com/in/seyi-oyemade/)
+
 - 
 <!-- FUTURE FEATURES -->
 
