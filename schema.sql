@@ -105,3 +105,6 @@ CREATE TABLE visits(
   PRIMARY KEY(id)
 );
 
+CREATE INDEX vet_id_index ON visits (vet_id DESC)
+CREATE INDEX animal_id_index ON visits (animal_id)
+CREATE INDEX owners_indexs ON owners(email DESC)
